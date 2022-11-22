@@ -22,4 +22,4 @@ if (age<18) {
     alert ("Powering On. Enjoy the ride!");
 } else if (isNaN(age)) {
     alert ("Not a valid age, Please enter your age in digits!");
-}
+} 
