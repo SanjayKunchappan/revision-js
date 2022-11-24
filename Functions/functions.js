@@ -16,3 +16,28 @@ var sayBye = function() { //anonymous function.. doesn't have a name. the functi
     console.log("Bye");
 }
 sayBye();
+
+
+//parameters and arguments
+
+function addition(a,b) {
+    sum = a+b;
+    return sum;
+}
+
+addition(2,3);
+
+
+//when return statement is encountered, this exits the function
+
+function multiply (a,b) {
+    if(a>10 || b>10) {
+        return "That's too hard!";
+    } else {
+        return a*b;
+    }
+}
+
+multiply (5,10);
+
+
