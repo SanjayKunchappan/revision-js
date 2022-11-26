@@ -30,6 +30,9 @@ list.shift();// this would return tiger and remove it from the array.
 //new array would be ["cat","bear","bird"].
 
 
+
+
+
 list.pop();// this returns bird and removes it from the array.
 //new array would be ["cat", "bear"].
 
@@ -52,8 +55,16 @@ list.concat(["bee", "deer"]); // adds this array at the end of the list array.
 //but outputting list, we can see that the concatenated values are missing from the array
 //this is because we didn't save it. 
 
-var newList = list.concat(["bee", "deer"]);
-//here newList would have 5 elements
+var newList = list.concat(["lion"]);
+//here newList would have 4 elements
 //and list would have the original 3 elements
 
+//sorts the array
 list.sort();
+//array after sorting
+////['bear', 'cat', 'elephant', 'lion']
+
+
+list.unshift("Koala");// adds new element to beginning of array and returns array length
+//the new array is
+//['Koala', 'bear', 'cat', 'elephant', 'lion']
