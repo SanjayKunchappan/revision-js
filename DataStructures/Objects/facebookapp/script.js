@@ -1,7 +1,7 @@
 var database = [
     {
         username: "Sanjay",
-        password: "sanjaysanjay"
+        password: "khushikhushi"
     }
 ];
 
@@ -33,3 +33,4 @@ function signIn(user, pass) {
 }
 
 signIn (userNamePrompt, passwordPrompt);
+
