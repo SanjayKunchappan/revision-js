@@ -17,3 +17,6 @@ var user = {
 
 //user.name would return 'Khushi'
 //user.isMarried would return false
+
+//adding a new property
+user.favouriteSong='Shiv Tandav Strotam';
