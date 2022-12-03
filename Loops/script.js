@@ -33,3 +33,47 @@ while (counterOne >0) {
     console.log(counterOne);
     counterOne--;
 }
+
+//do while loop
+//do while will run once even if the loop conditions are false in first iteration
+var counterTwo = 10;
+do {
+    console.log(counterTwo);
+    counterTwo--;
+}   while (counterTwo>0);
+
+
+//for each loop
+
+var todos = [
+    "clean room",
+    "brush teeth",
+    "exercise",
+    "study javascript",
+    "eat healthy"
+];
+todos.forEach(function(todo_element, i) {
+    console.log(todo_element, i);
+})
+
+//or we can write the function outside..
+var todos = [
+    "clean room",
+    "brush teeth",
+    "exercise",
+    "study javascript",
+    "eat healthy"
+];
+var moreTodos = [
+    "clean room",
+    "brush teeth",
+    "exercise",
+    "study javascript",
+    "eat healthy"
+];
+
+function logTodos(todo_element, i) {
+    console.log(todo_element, i);
+}
+todos.forEach(logTodos);
+moreTodos.forEach(logTodos);
