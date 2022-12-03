@@ -19,3 +19,17 @@ var todosLength = todos.length;
 for (var i=0; i<todosLength; i++) {
     todos.pop();
 }
+
+//while loop
+//1 to 10
+var counterOne=1;
+while (counterOne <=10) 
+{console.log(counterOne);
+    counterOne++;
+}
+//10 to 1
+var counterOne=10;
+while (counterOne >0) {
+    console.log(counterOne);
+    counterOne--;
+}
