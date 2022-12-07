@@ -48,4 +48,4 @@ headertags.parentElement; //to access parent element
 headertags.children; // to get all children
 
 // ##It is important to CACHE selectors in variables
-// 
+// this helps with speed as the browser doesn't have to search entire DOM to locate element again and again
