@@ -3,11 +3,11 @@
 var button = document.querySelector("#enter");
 var input = document.querySelector("#userinput");
 var ul = document.querySelector("ul");
-
+var listItems =  document.querySelectorAll("li");
 //
 function updatelistItems () {
-    var listItems =  document.querySelectorAll("li");
-    return
+    listItems =  document.querySelectorAll("li");
+    return listItems;
 }
 
 
@@ -32,12 +32,19 @@ function createListElement () {
 function addListAfterClick() {
     if (inputLength() > 0){
         createListElement();
+        updatelistItems();
+        console.log(listItems);
+        clickListenerForToggle();
     }
 }
 
 function addListAfterEnter(Event) {
     if (inputLength()>0 && Event.keyCode === 13){ // keyCode 13 is for Enter
         createListElement();
+        updatelistItems();
+        console.log(listItems);
+        clickListenerForToggle();
+
     }
 }
 
@@ -46,9 +53,12 @@ button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterEnter);
 
 
-
-//listItems is an array of all the li elements
-//adding listener for each array element
-listItems.forEach( function(element,i) {
+function clickListenerForToggle() {
+    //listItems is an array of all the li elements
+    //adding listener for each array element
+    listItems.forEach( function(element,i) {  
     element.addEventListener("click", toggleStrikeThrough); 
-});
+    });
+}
+
+clickListenerForToggle();
