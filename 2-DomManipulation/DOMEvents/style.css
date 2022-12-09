@@ -17,3 +17,7 @@
 .red {
     color:#D90429;
 }
+
+.done {
+    text-decoration: line-through;
+  }

@@ -1,0 +1,36 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+
+ul {padding: 0;}
+
+li {
+    cursor: pointer;
+    background-color: gold;
+    text-align: center;
+    width: 200px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 5px;
+    list-style: none;
+} 
+
+#first {
+
+}
+
+.second {
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red {
+    color:#D90429;
+}
+
+.done {
+    text-decoration: line-through;
+}
