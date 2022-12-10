@@ -16,14 +16,19 @@ li {
     border-radius: 10px;
     margin: 5px;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 } 
 
-#first {
-
-}
-
-.second {
-
+.deleteButton{
+    background-color: #D90429;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 25%;
 }
 
 .bold {
@@ -36,4 +41,14 @@ li {
 
 .done {
     text-decoration: line-through;
+}
+
+.deleteButton{
+    background-color: #D90429;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 25%;
+    text-decoration: none;
 }

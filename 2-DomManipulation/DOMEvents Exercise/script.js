@@ -10,12 +10,10 @@ function updatelistItems () {
     return listItems;
 }
 
-
 //element.classList.toggle can be used to alternatively add/remove class
 function toggleStrikeThrough() {
     this.classList.toggle("done"); //this
 }
-
 
 function inputLength () {
     return input.value.length; //returns how many characters are entered in input text field
@@ -27,6 +25,12 @@ function createListElement () {
     ul.appendChild(li); //appending the created element onto ul element
     input.value = ""; // clear out the input after creating new entry in list
 
+    //add delete button for every newly created list element
+
+    var deleteButton = document.createElement("button");
+    li.appendChild(deleteButton);
+    deleteButton.appendChild(document.createTextNode("X"));
+    deleteButton.classList.add("deleteButton");
 }
 
 function addListAfterClick() {
@@ -48,11 +52,6 @@ function addListAfterEnter(Event) {
     }
 }
 
-
-button.addEventListener("click", addListAfterClick);
-input.addEventListener("keypress", addListAfterEnter);
-
-
 function clickListenerForToggle() {
     //listItems is an array of all the li elements
     //adding listener for each array element
@@ -61,4 +60,5 @@ function clickListenerForToggle() {
     });
 }
 
-clickListenerForToggle();
+button.addEventListener("click", addListAfterClick);
+input.addEventListener("keypress", addListAfterEnter);
