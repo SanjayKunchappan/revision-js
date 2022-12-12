@@ -2,6 +2,19 @@
     font-family: Roboto, sans-serif;
 }
 
+body {
+    background-color: #000000 ;
+}
+
+p {
+    color: aliceblue;
+}
+
+h1 {
+    color: #7B2CBF;
+}
+
+
 ul {
     padding: 0;
 }
@@ -21,16 +34,32 @@ li {
     align-items: center; 
 } 
 
+#userinput {
+        border: none;
+        width: 200px;
+        font-size: large;
+        padding: 5px;
+        border-radius: 5px;
+}
+
+.add-button {
+    border: none;
+    background-color: gold;
+    font-size: large;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
 .done {
     text-decoration: line-through;
 }
 
-.deleteButton{
-    background-color: #D90429;
-    color: white;
+.delete-button {
+    background-color: #000;
+    color: #D90429;
     border: none;
     margin: 5px;
     padding: 5px 10px;
     border-radius: 25%;
-    text-decoration: none;
 }
+

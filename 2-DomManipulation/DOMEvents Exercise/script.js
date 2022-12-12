@@ -13,6 +13,7 @@ function updatelistItems () {
 //element.classList.toggle can be used to alternatively add/remove class
 function toggleStrikeThrough() {
     this.classList.toggle("done"); //this
+
 }
 
 function inputLength () {
@@ -29,8 +30,8 @@ function createListElement () {
 
     var deleteButton = document.createElement("button");
     li.appendChild(deleteButton);
-    deleteButton.appendChild(document.createTextNode("X"));
-    deleteButton.classList.add("deleteButton");
+    deleteButton.appendChild(document.createTextNode("\u274C"));
+    deleteButton.classList.add("delete-button");
 }
 
 function addListAfterClick() {
