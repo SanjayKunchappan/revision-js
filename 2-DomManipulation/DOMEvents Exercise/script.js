@@ -55,11 +55,9 @@ function addListAfterEnter(Event) {
 }
 
 function deleteListItem(){
-    console.log(listItems);
-    console.log(this);// this returns the Delete button
-} // ideally this.parent should return the parent which is the <li> element
-//but this returns undefined
-
+    var currentListElement = this.parentNode;//this returns the delete button
+    currentListElement.parentNode.removeChild(currentListElement);//deleting currentListElement
+} 
 
 function clickListenerForDeleteButton() { //listItems is an array of all the <li> elements
     listItems.forEach( function(element,i) {  //here element is the <li> element
