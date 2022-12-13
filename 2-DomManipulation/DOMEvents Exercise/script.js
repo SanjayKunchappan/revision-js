@@ -27,7 +27,6 @@ function createListElement () {
     input.value = ""; // clear out the input after creating new entry in list
 
     //add delete button for every newly created list element
-
     var deleteButton = document.createElement("button");
     li.appendChild(deleteButton);
     deleteButton.appendChild(document.createTextNode("\u274C"));
@@ -40,6 +39,7 @@ function addListAfterClick() {
         updatelistItems();
         console.log(listItems);
         clickListenerForToggle();
+        clickListenerForDeleteButton();
     }
 }
 
@@ -49,15 +49,31 @@ function addListAfterEnter(Event) {
         updatelistItems();
         console.log(listItems);
         clickListenerForToggle();
+        clickListenerForDeleteButton();
 
     }
 }
+
+function deleteListItem(){
+    console.log(listItems);
+    console.log(this);// this returns the Delete button
+} // ideally this.parent should return the parent which is the <li> element
+//but this returns undefined
+
+
+function clickListenerForDeleteButton() { //listItems is an array of all the <li> elements
+    listItems.forEach( function(element,i) {  //here element is the <li> element
+        element.children[0].addEventListener("click", deleteListItem); 
+    }); //element.children[0] is the Delete button placed inside that list element    
+}
+
+
 
 function clickListenerForToggle() {
     //listItems is an array of all the li elements
     //adding listener for each array element
     listItems.forEach( function(element,i) {  
-    element.addEventListener("click", toggleStrikeThrough); 
+        element.addEventListener("click", toggleStrikeThrough ); 
     });
 }
 

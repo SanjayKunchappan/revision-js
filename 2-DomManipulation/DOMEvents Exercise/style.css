@@ -24,7 +24,7 @@ li {
     cursor: pointer;
     background-color: gold;
     text-align: center;
-    width: 200px;
+    width: 300px;
     padding: 5px 15px;
     border-radius: 10px;
     margin: 5px;
@@ -32,6 +32,8 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    overflow-y: auto; 
+    text-justify: distribute-all-lines;
 } 
 
 #userinput {
@@ -63,3 +65,7 @@ li {
     border-radius: 25%;
 }
 
+.delete-button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
